@@ -1,0 +1,36 @@
+[debug] [2024-03-15T01:23:52.598Z] ----------------------------------------------------------------------
+[debug] [2024-03-15T01:23:52.605Z] Command:       /Users/preetikulkarni/.nvm/versions/node/v20.10.0/bin/node /Users/preetikulkarni/.nvm/versions/node/v20.10.0/bin/firebase serve
+[debug] [2024-03-15T01:23:52.605Z] CLI Version:   13.5.0
+[debug] [2024-03-15T01:23:52.605Z] Platform:      darwin
+[debug] [2024-03-15T01:23:52.605Z] Node Version:  v20.10.0
+[debug] [2024-03-15T01:23:52.605Z] Time:          Thu Mar 14 2024 21:23:52 GMT-0400 (Eastern Daylight Time)
+[debug] [2024-03-15T01:23:52.605Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-03-15T01:23:52.685Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-03-15T01:23:52.686Z] > authorizing via signed-in user (itsmepreetik@gmail.com)
+[debug] [2024-03-15T01:23:52.686Z] [iam] checking project portfolio-d11f9 for permissions ["firebase.projects.get"]
+[debug] [2024-03-15T01:23:52.690Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/portfolio-d11f9:testIamPermissions [none]
+[debug] [2024-03-15T01:23:52.690Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/portfolio-d11f9:testIamPermissions x-goog-quota-user=projects/portfolio-d11f9
+[debug] [2024-03-15T01:23:52.690Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/portfolio-d11f9:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2024-03-15T01:23:53.150Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/portfolio-d11f9:testIamPermissions 200
+[debug] [2024-03-15T01:23:53.150Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/portfolio-d11f9:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2024-03-15T01:23:53.151Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/portfolio-d11f9 [none]
+[debug] [2024-03-15T01:23:53.450Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/portfolio-d11f9 200
+[debug] [2024-03-15T01:23:53.450Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/portfolio-d11f9 {"projectId":"portfolio-d11f9","projectNumber":"61807479189","displayName":"Portfolio","name":"projects/portfolio-d11f9","resources":{"hostingSite":"portfolio-d11f9"},"state":"ACTIVE","etag":"1_f5098296-5ef7-4f1f-be9e-3720cff58313"}
+[info] 
+[info] === Serving from '/Users/preetikulkarni/Desktop/Projects/Firebase_portfolio/firebase-portfolio'...
+[info] 
+[debug] [2024-03-15T01:23:53.453Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/portfolio-d11f9/sites 
+[debug] [2024-03-15T01:23:54.180Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/portfolio-d11f9/sites 200
+[debug] [2024-03-15T01:23:54.180Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/portfolio-d11f9/sites {"sites":[{"name":"projects/portfolio-d11f9/sites/portfolio-d11f9","defaultUrl":"https://portfolio-d11f9.web.app","appId":"1:61807479189:web:8032220175fe8212884e9c","type":"DEFAULT_SITE"},{"name":"projects/portfolio-d11f9/sites/preeti-k","defaultUrl":"https://preeti-k.web.app","type":"USER_SITE"}]}
+[debug] [2024-03-15T01:23:54.181Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/portfolio-d11f9/webApps/1:61807479189:web:8032220175fe8212884e9c/config [none]
+[debug] [2024-03-15T01:23:54.603Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/portfolio-d11f9/webApps/1:61807479189:web:8032220175fe8212884e9c/config 200
+[debug] [2024-03-15T01:23:54.603Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/portfolio-d11f9/webApps/1:61807479189:web:8032220175fe8212884e9c/config {"projectId":"portfolio-d11f9","appId":"1:61807479189:web:8032220175fe8212884e9c","storageBucket":"portfolio-d11f9.appspot.com","apiKey":"AIzaSyAoILH48Iwm3EuV6yhc__aLiDpFMmi66ik","authDomain":"portfolio-d11f9.firebaseapp.com","messagingSenderId":"61807479189","measurementId":"G-GQEN6HXJ4J"}
+[debug] [2024-03-15T01:23:54.613Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/portfolio-d11f9 [none]
+[debug] [2024-03-15T01:23:54.893Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/portfolio-d11f9 200
+[debug] [2024-03-15T01:23:54.893Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/portfolio-d11f9 {"projectId":"portfolio-d11f9","projectNumber":"61807479189","displayName":"Portfolio","name":"projects/portfolio-d11f9","resources":{"hostingSite":"portfolio-d11f9"},"state":"ACTIVE","etag":"1_f5098296-5ef7-4f1f-be9e-3720cff58313"}
+[info] i  hosting[preeti-k]: Serving hosting files from: src {"metadata":{"emulator":{"name":"hosting"},"message":"Serving hosting files from: \u001b[1msrc\u001b[22m"}}
+[info] ✔  hosting[preeti-k]: Local server: http://localhost:5002 {"metadata":{"emulator":{"name":"hosting"},"message":"Local server: \u001b[4m\u001b[1mhttp://localhost:5002\u001b[22m\u001b[24m"}}
+[info] i  hosting: ::1 - - [15/Mar/2024:01:24:00 +0000] "GET / HTTP/1.1" 200 320 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"::1 - - [15/Mar/2024:01:24:00 +0000] \"GET / HTTP/1.1\" 200 320 \"-\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36\""}}
+[info] i  hosting: ::1 - - [15/Mar/2024:01:24:01 +0000] "GET / HTTP/1.1" 200 320 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"::1 - - [15/Mar/2024:01:24:01 +0000] \"GET / HTTP/1.1\" 200 320 \"-\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36\""}}
+[info] i  hosting: ::1 - - [15/Mar/2024:01:24:01 +0000] "GET / HTTP/1.1" 200 320 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"::1 - - [15/Mar/2024:01:24:01 +0000] \"GET / HTTP/1.1\" 200 320 \"-\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36\""}}
